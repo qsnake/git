@@ -9,6 +9,8 @@ fi
 
 set -e
 
-./configure --prefix="$SPKG_LOCAL" --with-zlib="$SPKG_LOCAL"
+./configure --prefix="$SPKG_LOCAL" \
+    --with-zlib="$SPKG_LOCAL" \
+    --with-curl="$SPKG_LOCAL"
 make
 make install
