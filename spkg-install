@@ -13,6 +13,7 @@ export PYTHON_PATH="$SPKG_LOCAL"/bin/python
 
 ./configure --prefix="$SPKG_LOCAL" \
     --with-zlib="$SPKG_LOCAL" \
-    --with-curl="$SPKG_LOCAL"
+    --with-curl="$SPKG_LOCAL" \
+    --without-tcltk
 make
 make install
